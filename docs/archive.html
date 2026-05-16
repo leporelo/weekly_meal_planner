@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan Archive</title>
+    <style>
+:root {
+    --green-dark: #2d5016;
+    --green-mid: #4a7c23;
+    --green-light: #6ba33e;
+    --cream: #faf8f0;
+    --white: #ffffff;
+    --gray-light: #f5f5f5;
+    --gray-mid: #666666;
+    --gray-dark: #333333;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.12);
+    --radius: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, sans-serif;
+    background-color: var(--cream);
+    color: var(--gray-dark);
+    line-height: 1.6;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(135deg, var(--green-dark), var(--green-mid));
+    color: var(--white);
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+}
+
+header .date-range {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+nav.day-nav {
+    background: var(--white);
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav.day-nav a {
+    color: var(--green-dark);
+    text-decoration: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+nav.day-nav a:hover {
+    background: var(--gray-light);
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.day-section {
+    margin-bottom: 2.5rem;
+}
+
+.day-section h2 {
+    color: var(--green-dark);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--green-light);
+}
+
+.meal-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--green-mid);
+    margin-bottom: 0.4rem;
+}
+
+.recipe-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow);
+    transition: box-shadow 0.2s;
+}
+
+.recipe-card:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+.recipe-card h3 {
+    font-size: 1.1rem;
+    color: var(--gray-dark);
+    margin-bottom: 0.5rem;
+}
+
+.recipe-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.85rem;
+    color: var(--gray-mid);
+    margin-bottom: 0.7rem;
+}
+
+.recipe-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.servings-list {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+    padding: 0.5rem 0.8rem;
+    background: var(--gray-light);
+    border-radius: 6px;
+}
+
+.servings-list .person {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.servings-list .person strong {
+    color: var(--green-dark);
+}
+
+details {
+    margin-top: 0.5rem;
+}
+
+details summary {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--green-mid);
+    padding: 0.3rem 0;
+    user-select: none;
+}
+
+details summary:hover {
+    color: var(--green-dark);
+}
+
+details .content {
+    padding: 0.8rem 0;
+    font-size: 0.9rem;
+}
+
+details .content ul {
+    list-style: none;
+    padding: 0;
+}
+
+details .content ul li {
+    padding: 0.2rem 0;
+    padding-left: 1rem;
+    position: relative;
+}
+
+details .content ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--green-light);
+}
+
+details .content .instructions {
+    white-space: pre-line;
+    line-height: 1.7;
+}
+
+.grocery-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--green-light);
+}
+
+.grocery-section h2 {
+    color: var(--green-dark);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.grocery-category {
+    margin-bottom: 1.5rem;
+}
+
+.grocery-category h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--green-mid);
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+}
+
+.grocery-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.grocery-category ul li {
+    padding: 0.25rem 0 0.25rem 1rem;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+.grocery-category ul li::before {
+    content: "▪";
+    position: absolute;
+    left: 0;
+    color: var(--green-light);
+}
+
+.archive-link {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.archive-link a {
+    color: var(--green-dark);
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid var(--green-light);
+    padding-bottom: 2px;
+}
+
+.archive-link a:hover {
+    color: var(--green-mid);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.8rem;
+    color: var(--gray-mid);
+}
+
+/* Archive page */
+.archive-list {
+    list-style: none;
+    padding: 0;
+}
+
+.archive-list li {
+    margin-bottom: 0.8rem;
+}
+
+.archive-list a {
+    display: block;
+    background: var(--white);
+    padding: 1rem 1.2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    color: var(--green-dark);
+    text-decoration: none;
+    font-weight: 500;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.archive-list a:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-1px);
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    header {
+        padding: 1.5rem 1rem;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .recipe-meta {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    nav.day-nav {
+        padding: 0.7rem;
+        gap: 0.3rem;
+    }
+
+    nav.day-nav a {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>🌱 Meal Plan Archive</h1>
+  <div class="date-range">All past weekly plans</div>
+</header>
+<main>
+<ul class="archive-list">
+  <li><a href="weeks/2026-05-11/index.html">Week of May 11 – May 17, 2026</a></li>
+</ul>
+<div class="archive-link"><a href="index.html">← Current Week</a></div>
+</main>
+<footer>Generated by Vegan Meal Planner</footer>
+</body>
+</html>
