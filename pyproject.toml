@@ -1,0 +1,31 @@
+[project]
+name = "vegan-meal-planner"
+version = "0.1.0"
+description = "A weekly high-protein vegan meal planning system for weightlifting vegans"
+requires-python = ">=3.11"
+dependencies = [
+    "google-generativeai>=0.8.0",
+    "pyyaml>=6.0",
+    "jsonschema>=4.20.0",
+    "jinja2>=3.1.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "hypothesis>=6.100.0",
+    "pytest>=8.0.0",
+    "pytest-hypothesis>=0.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]

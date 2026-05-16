@@ -1,0 +1,54 @@
+users:
+  - name: "David"
+    email: "prdelaaak+mealprep@gmail.com"
+    weight_kg: 90.0
+    height_cm: 180
+    gender: "male"
+    preferences:
+      dislike:
+        - smoothies
+        - acai bowls
+        - onion
+      like:
+        - protein shakes
+        - green mountain and planted products
+        - high-protein meals
+        - simple recipes with few ingredients
+        - bowls with grain and vegies
+        - indian food
+        - chinese and japanese type food
+      supplements:
+        - name: "Bryan Johnson Blueprint Protein (plant-based)"
+          protein_per_serving_g: 26
+          notes: "Can be used as a snack or post-workout shake mixed with water or oat milk"
+  - name: "Baska"
+    email: "borka412@gmail.com"
+    weight_kg: 70.0
+    height_cm: 171
+    gender: "female"
+    preferences:
+      dislike: []
+      like: []
+      supplements: []
+
+shared_plan: true  # Generate one meal plan for all users (uses highest protein target)
+
+gemini:
+  api_key_env: "GEMINI_API_KEY"
+  model: "gemini-2.5-flash"
+  max_retries: 5
+
+email:
+  smtp_host: "smtp.gmail.com"
+  smtp_port: 465
+  sender_email_env: "SENDER_EMAIL"
+  sender_password_env: "SENDER_PASSWORD"
+  schedule_day: "Sunday"
+  schedule_time: "08:00"
+  schedule_timezone: "Europe/London"
+
+publish_website: true
+
+history:
+  file_path: "history.yaml"
+  retention_weeks: 4

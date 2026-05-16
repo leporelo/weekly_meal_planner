@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+.hypothesis/
+history.yaml
+history.json
+cron.log
+crontab.txt
+install_cron.sh
+send_test_email.py
