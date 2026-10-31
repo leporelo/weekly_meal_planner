@@ -1,0 +1,1838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegan Meal Plan – October 26 – November 01, 2026</title>
+    <style>
+:root {
+    --green-dark: #2d5016;
+    --green-mid: #4a7c23;
+    --green-light: #6ba33e;
+    --cream: #faf8f0;
+    --white: #ffffff;
+    --gray-light: #f5f5f5;
+    --gray-mid: #666666;
+    --gray-dark: #333333;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.12);
+    --radius: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, sans-serif;
+    background-color: var(--cream);
+    color: var(--gray-dark);
+    line-height: 1.6;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(135deg, var(--green-dark), var(--green-mid));
+    color: var(--white);
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+}
+
+header .date-range {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+nav.day-nav {
+    background: var(--white);
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav.day-nav a {
+    color: var(--green-dark);
+    text-decoration: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+nav.day-nav a:hover {
+    background: var(--gray-light);
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.day-section {
+    margin-bottom: 2.5rem;
+}
+
+.day-section h2 {
+    color: var(--green-dark);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--green-light);
+}
+
+.meal-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--green-mid);
+    margin-bottom: 0.4rem;
+}
+
+.recipe-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow);
+    transition: box-shadow 0.2s;
+}
+
+.recipe-card:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+.recipe-card h3 {
+    font-size: 1.1rem;
+    color: var(--gray-dark);
+    margin-bottom: 0.5rem;
+}
+
+.recipe-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.85rem;
+    color: var(--gray-mid);
+    margin-bottom: 0.7rem;
+}
+
+.recipe-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.servings-list {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+    padding: 0.5rem 0.8rem;
+    background: var(--gray-light);
+    border-radius: 6px;
+}
+
+.servings-list .person {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.servings-list .person strong {
+    color: var(--green-dark);
+}
+
+details {
+    margin-top: 0.5rem;
+}
+
+details summary {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--green-mid);
+    padding: 0.3rem 0;
+    user-select: none;
+}
+
+details summary:hover {
+    color: var(--green-dark);
+}
+
+details .content {
+    padding: 0.8rem 0;
+    font-size: 0.9rem;
+}
+
+details .content ul {
+    list-style: none;
+    padding: 0;
+}
+
+details .content ul li {
+    padding: 0.2rem 0;
+    padding-left: 1rem;
+    position: relative;
+}
+
+details .content ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--green-light);
+}
+
+details .content .instructions {
+    white-space: pre-line;
+    line-height: 1.7;
+}
+
+.grocery-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--green-light);
+}
+
+.grocery-section h2 {
+    color: var(--green-dark);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.grocery-category {
+    margin-bottom: 1.5rem;
+}
+
+.grocery-category h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--green-mid);
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+}
+
+.grocery-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.grocery-category ul li {
+    padding: 0.25rem 0 0.25rem 1rem;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+.grocery-category ul li::before {
+    content: "▪";
+    position: absolute;
+    left: 0;
+    color: var(--green-light);
+}
+
+.archive-link {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.archive-link a {
+    color: var(--green-dark);
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid var(--green-light);
+    padding-bottom: 2px;
+}
+
+.archive-link a:hover {
+    color: var(--green-mid);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.8rem;
+    color: var(--gray-mid);
+}
+
+/* Archive page */
+.archive-list {
+    list-style: none;
+    padding: 0;
+}
+
+.archive-list li {
+    margin-bottom: 0.8rem;
+}
+
+.archive-list a {
+    display: block;
+    background: var(--white);
+    padding: 1rem 1.2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    color: var(--green-dark);
+    text-decoration: none;
+    font-weight: 500;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.archive-list a:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-1px);
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    header {
+        padding: 1.5rem 1rem;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .recipe-meta {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    nav.day-nav {
+        padding: 0.7rem;
+        gap: 0.3rem;
+    }
+
+    nav.day-nav a {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>🌱 Weekly Vegan Meal Plan</h1>
+  <div class="date-range">October 26 – November 01, 2026</div>
+</header>
+<nav class="day-nav">
+  <a href="#monday">Mon</a>
+  <a href="#tuesday">Tue</a>
+  <a href="#wednesday">Wed</a>
+  <a href="#thursday">Thu</a>
+  <a href="#friday">Fri</a>
+  <a href="#saturday">Sat</a>
+  <a href="#sunday">Sun</a>
+</nav>
+<main>
+<section class="day-section" id="monday">
+  <h2>Monday</h2>
+  <div class="meal-label">breakfast</div>
+  <div class="recipe-card">
+    <h3>High-Protein Chickpea Flour &amp; Tofu Scramble with Roasted Cherry Tomatoes and Spinach</h3>
+    <div class="recipe-meta">
+      <span>🥜 33g protein/serving</span>
+      <span>🔪 15 min prep</span>
+      <span>🔥 25 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>350 g Extra-firm tofu, pressed and crumbled</li>
+          <li>0.5 cup Chickpea flour</li>
+          <li>0.5 cup Water</li>
+          <li>4 tbsp Nutritional yeast</li>
+          <li>0.5 tsp Turmeric powder</li>
+          <li>0.2 tsp Black salt (kala namak, optional for eggy flavor)</li>
+          <li>0.5 tsp Smoked paprika</li>
+          <li>200 g Cherry tomatoes</li>
+          <li>100 g Fresh spinach</li>
+          <li>2 tbsp Olive oil</li>
+          <li>0.5 tsp Salt</li>
+          <li>0.2 tsp Black pepper</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">Preheat your oven to 200°C (400°F). Toss the cherry tomatoes with 1 tbsp of olive oil, salt, and pepper on a baking sheet. Roast for 15-20 minutes until slightly burst and caramelized. While tomatoes roast, prepare the scramble base. In a medium bowl, whisk together chickpea flour, water, nutritional yeast, turmeric, black salt, and smoked paprika until smooth. Heat the remaining 1 tbsp of olive oil in a large non-stick skillet over medium heat. Add the crumbled tofu and cook for 5-7 minutes, stirring occasionally, until it starts to brown slightly. Pour the chickpea flour mixture over the tofu, stirring constantly for 3-5 minutes until the scramble thickens and resembles cooked eggs. Fold in the fresh spinach and cook until wilted, about 1-2 minutes. Stir in the roasted cherry tomatoes. Season with additional salt and pepper to taste before serving immediately.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">lunch</div>
+  <div class="recipe-card">
+    <h3>High-Protein Black Bean &amp; Seitan Bowl with Roasted Cauliflower and Green Tahini Dressing</h3>
+    <div class="recipe-meta">
+      <span>🥜 49g protein/serving</span>
+      <span>🔪 15 min prep</span>
+      <span>🔥 30 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>2 cup Cooked quinoa</li>
+          <li>200 g Seitan, sliced into strips</li>
+          <li>1.5 cup Black beans, canned, rinsed and drained</li>
+          <li>400 g Cauliflower florets</li>
+          <li>3 tbsp Olive oil</li>
+          <li>1 tsp Cumin powder</li>
+          <li>0.5 tsp Chili powder</li>
+          <li>0.5 tsp Smoked paprika</li>
+          <li>0.2 cup Fresh parsley, chopped</li>
+          <li>4 tbsp Tahini</li>
+          <li>2 tbsp Lemon juice</li>
+          <li>4 tbsp Water</li>
+          <li>0.5 tsp Salt</li>
+          <li>0.2 tsp Black pepper</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">Preheat your oven to 200°C (400°F). On a large baking sheet, toss the cauliflower florets with 1 tbsp of olive oil, half of the cumin, chili powder, and smoked paprika. Season with salt and pepper. Roast for 20-25 minutes, flipping halfway, until tender and slightly browned. While the cauliflower roasts, heat 1 tbsp of olive oil in a non-stick skillet over medium-high heat. Add the seitan strips and cook for 5-7 minutes, stirring occasionally, until golden brown and slightly crispy. Set aside. In the same skillet, add the remaining 1 tbsp of olive oil and the rinsed black beans, along with the remaining cumin, chili powder, and smoked paprika. Cook for 5 minutes, stirring, until heated through and seasoned. For the green tahini dressing, combine tahini, lemon juice, water, and fresh parsley in a small bowl. Whisk until smooth, adding more water if needed to reach desired consistency. Season with a pinch of salt. To assemble the bowls, divide the cooked quinoa, roasted cauliflower, seasoned black beans, and seitan strips between two serving bowls. Drizzle generously with the green tahini dressing.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">dinner</div>
+  <div class="recipe-card">
+    <h3>High-Protein Moroccan-Spiced Chickpea &amp; Almond Tagine with Millet</h3>
+    <div class="recipe-meta">
+      <span>🥜 31g protein/serving</span>
+      <span>🔪 20 min prep</span>
+      <span>🔥 40 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>1 cup Millet, dry</li>
+          <li>2 cup Water (for millet)</li>
+          <li>2 whole Canned chickpeas, rinsed and drained</li>
+          <li>0.5 cup Blanched almonds</li>
+          <li>2 tbsp Tomato paste</li>
+          <li>1.5 cup Vegetable broth</li>
+          <li>1 whole Diced tomatoes, canned</li>
+          <li>1 whole Zucchini, diced</li>
+          <li>2 whole Carrots, sliced</li>
+          <li>2 tsp Ras el hanout spice blend</li>
+          <li>0.5 tsp Ground turmeric</li>
+          <li>1 tsp Ground coriander</li>
+          <li>2 tbsp Olive oil</li>
+          <li>0.2 cup Fresh cilantro, chopped (for garnish)</li>
+          <li>0.8 tsp Salt</li>
+          <li>0.2 tsp Black pepper</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">First, cook the millet: combine 1 cup dry millet with 2 cups water and 1/4 tsp salt in a saucepan. Bring to a boil, then reduce heat to low, cover, and simmer for 20 minutes, or until all water is absorbed. Fluff with a fork and set aside. In a large pot or Dutch oven, heat 2 tbsp olive oil over medium heat. Add the diced zucchini and sliced carrots and sauté for 5-7 minutes until slightly tender. Stir in the tomato paste, ras el hanout, turmeric, and coriander, cooking for 1 minute until fragrant. Add the rinsed chickpeas, vegetable broth, and diced tomatoes to the pot. Bring to a simmer, then reduce heat to low, cover, and cook for 15-20 minutes, allowing the flavors to meld and vegetables to soften. Stir in the blanched almonds for the last 5 minutes of cooking. Season with salt and pepper to taste. To serve, spoon the fluffy millet into bowls and ladle the hot Moroccan-spiced chickpea and almond tagine over the top. Garnish with fresh chopped cilantro.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">Snack 1</div>
+  <div class="recipe-card">
+    <h3>Bryan Johnson Blueprint Protein Nutrient Boost</h3>
+    <div class="recipe-meta">
+      <span>🥜 33g protein/serving</span>
+      <span>🔪 2 min prep</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 1.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 0.8 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>26 g Bryan Johnson Blueprint Protein powder</li>
+          <li>1.5 cup Unsweetened almond milk</li>
+          <li>2 tbsp Almond butter</li>
+          <li>1 tbsp Chia seeds</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">In a blender, combine the Bryan Johnson Blueprint Protein powder, unsweetened almond milk, almond butter, and chia seeds. Blend on high speed for 30-60 seconds, or until completely smooth and creamy. Pour into a glass and enjoy immediately as a substantial protein-rich snack. Ensure all ingredients are well incorporated for optimal texture.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">Snack 2</div>
+  <div class="recipe-card">
+    <h3>Bryan Johnson Blueprint Protein Mocha Fuel</h3>
+    <div class="recipe-meta">
+      <span>🥜 28g protein/serving</span>
+      <span>🔪 2 min prep</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 1.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 0.8 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>26 g Bryan Johnson Blueprint Protein powder</li>
+          <li>1.5 cup Water (or unsweetened plant milk for extra creaminess)</li>
+          <li>1 tbsp Unsweetened cocoa powder</li>
+          <li>0.5 tsp Instant coffee or espresso powder</li>
+          <li>1 tsp Erythritol or preferred sweetener (optional)</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">In a shaker bottle or blender, combine the Bryan Johnson Blueprint Protein powder, water (or plant milk), unsweetened cocoa powder, instant coffee/espresso powder, and optional sweetener. If using a shaker bottle, secure the lid tightly and shake vigorously for 20-30 seconds until the powder is fully dissolved and smooth. If using a blender, blend on high speed for 15-20 seconds. Pour into a glass and consume immediately for a stimulating, high-protein snack.</div>
+      </div>
+    </details>
+  </div>
+</section>
+<section class="day-section" id="tuesday">
+  <h2>Tuesday</h2>
+  <div class="meal-label">breakfast</div>
+  <div class="recipe-card">
+    <h3>High-Protein Savory Millet Bowl with Turmeric Tempeh and Sautéed Kale</h3>
+    <div class="recipe-meta">
+      <span>🥜 30g protein/serving</span>
+      <span>🔪 10 min prep</span>
+      <span>🔥 30 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>0.8 cup Millet, dry</li>
+          <li>1.5 cup Vegetable broth</li>
+          <li>227 g Tempeh, block</li>
+          <li>4 cup Kale, chopped</li>
+          <li>2 tbsp Olive oil</li>
+          <li>1 tsp Turmeric powder</li>
+          <li>1 tsp Garlic powder</li>
+          <li>2 tbsp Tamari (or soy sauce)</li>
+          <li>2 tbsp Nutritional yeast</li>
+          <li>0.2 tsp Black pepper, ground</li>
+          <li>0.2 tsp Salt, to taste</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">Rinse the millet thoroughly under cold water. In a medium saucepan, combine the rinsed millet and vegetable broth. Bring to a boil, then reduce heat to low, cover, and simmer for 20-25 minutes, or until the liquid is absorbed and the millet is tender. Fluff with a fork and set aside.
+While the millet cooks, crumble the tempeh into small pieces. In a large skillet, heat 1 tablespoon of olive oil over medium heat. Add the crumbled tempeh, turmeric powder, and garlic powder. Sauté for 7-10 minutes, stirring occasionally, until the tempeh is lightly browned and crispy.
+Remove the tempeh from the skillet and set aside. Add the remaining 1 tablespoon of olive oil to the same skillet. Add the chopped kale and sauté for 5-7 minutes, or until wilted and tender-crisp. Stir in the tamari and black pepper.
+Divide the cooked millet between two serving bowls. Top each bowl with half of the sautéed kale and half of the turmeric tempeh crumbles. Sprinkle each serving with 1 tablespoon of nutritional yeast and adjust salt to taste. Serve immediately.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">lunch</div>
+  <div class="recipe-card">
+    <h3>High-Protein Mediterranean Seitan &amp; Chickpea Bulgur Bowl with Roasted Red Peppers and Olives</h3>
+    <div class="recipe-meta">
+      <span>🥜 46g protein/serving</span>
+      <span>🔪 15 min prep</span>
+      <span>🔥 20 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>0.5 cup Bulgur, medium grain</li>
+          <li>1 cup Vegetable broth</li>
+          <li>224 g Seitan, pre-made, sliced</li>
+          <li>1 whole Chickpeas, canned, rinsed and drained</li>
+          <li>0.5 cup Roasted red peppers, jarred, drained and sliced</li>
+          <li>0.2 cup Kalamata olives, pitted and halved</li>
+          <li>0.5 cup Cucumber, diced</li>
+          <li>1 cup Cherry tomatoes, halved</li>
+          <li>0.2 cup Fresh parsley, chopped</li>
+          <li>2 tbsp Lemon juice, fresh</li>
+          <li>2 tbsp Olive oil</li>
+          <li>1 tsp Dried oregano</li>
+          <li>0.5 tsp Garlic powder</li>
+          <li>0.5 tsp Salt, to taste</li>
+          <li>0.2 tsp Black pepper, ground</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">In a small saucepan, bring the vegetable broth to a boil. Add the bulgur, reduce heat to low, cover, and simmer for 10-12 minutes, or until the liquid is absorbed and the bulgur is tender. Remove from heat and let sit, covered, for 5 minutes, then fluff with a fork.
+While the bulgur cooks, prepare the seitan. In a large skillet, heat 1 tablespoon of olive oil over medium-high heat. Add the sliced seitan and cook for 5-7 minutes, stirring occasionally, until browned and slightly crispy. Sprinkle with garlic powder, salt, and pepper during the last minute of cooking.
+In a large bowl, combine the cooked bulgur, browned seitan, rinsed chickpeas, roasted red peppers, Kalamata olives, diced cucumber, and halved cherry tomatoes. Add the fresh parsley.
+In a small bowl, whisk together the lemon juice, remaining 1 tablespoon of olive oil, dried oregano, salt, and black pepper to create the dressing. Pour the dressing over the bowl ingredients and toss gently to combine. Divide evenly into two serving bowls and serve.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">dinner</div>
+  <div class="recipe-card">
+    <h3>High-Protein Hearty Lentil &amp; Seitan Stew with Root Vegetables and Barley</h3>
+    <div class="recipe-meta">
+      <span>🥜 51g protein/serving</span>
+      <span>🔪 15 min prep</span>
+      <span>🔥 45 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>0.5 cup Green lentils, dry</li>
+          <li>0.2 cup Pearled barley, dry</li>
+          <li>170 g Seitan, pre-made, cubed</li>
+          <li>1 cup Carrots, chopped</li>
+          <li>0.5 cup Celery, chopped</li>
+          <li>4 cup Vegetable broth</li>
+          <li>1 whole Diced tomatoes, canned</li>
+          <li>2 tbsp Tomato paste</li>
+          <li>1 whole Bay leaf</li>
+          <li>1 tsp Dried thyme</li>
+          <li>0.5 tsp Smoked paprika</li>
+          <li>1 tbsp Olive oil</li>
+          <li>2 tbsp Fresh parsley, chopped, for garnish</li>
+          <li>0.5 tsp Salt, to taste</li>
+          <li>0.2 tsp Black pepper, ground, to taste</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">Rinse the green lentils and pearled barley thoroughly. In a large pot or Dutch oven, heat the olive oil over medium heat. Add the chopped carrots and celery and sauté for 5-7 minutes, until slightly softened.
+Stir in the tomato paste, dried thyme, and smoked paprika. Cook for 1 minute, stirring continuously, to toast the spices and deepen the flavor. Add the rinsed lentils, barley, cubed seitan, diced tomatoes (undrained), vegetable broth, and bay leaf to the pot.
+Bring the stew to a boil, then reduce the heat to low, cover, and simmer for 35-45 minutes, or until the lentils and barley are tender. Stir occasionally to prevent sticking. Remove the bay leaf before serving.
+Season the stew with salt and black pepper to taste. Ladle the hot stew into two serving bowls and garnish with fresh chopped parsley. Serve immediately.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">Snack 1</div>
+  <div class="recipe-card">
+    <h3>Bryan Johnson Blueprint Protein Pure Hydration</h3>
+    <div class="recipe-meta">
+      <span>🥜 26g protein/serving</span>
+      <span>🔪 2 min prep</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>2 whole Bryan Johnson Blueprint Protein</li>
+          <li>600 ml Water</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">For each serving, measure out one serving of Bryan Johnson Blueprint Protein. Pour 300ml of cold water into a shaker bottle. Add one serving of the Bryan Johnson Blueprint Protein powder to the water. Secure the lid tightly and shake vigorously for 15-30 seconds, or until the powder is fully dissolved and smooth. Repeat for the second serving. Consume immediately.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">Snack 2</div>
+  <div class="recipe-card">
+    <h3>High-Protein Rosemary &amp; Garlic Roasted Edamame &amp; Pepitas</h3>
+    <div class="recipe-meta">
+      <span>🥜 28g protein/serving</span>
+      <span>🔪 5 min prep</span>
+      <span>🔥 20 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>1.5 cup Shelled edamame, frozen</li>
+          <li>0.8 cup Pepitas (pumpkin seeds)</li>
+          <li>1 tbsp Olive oil</li>
+          <li>0.8 tsp Garlic powder</li>
+          <li>0.5 tsp Dried rosemary</li>
+          <li>0.2 tsp Sea salt</li>
+          <li>0.1 tsp Black pepper, ground</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">Preheat your oven to 200°C (400°F). Line a baking sheet with parchment paper. In a medium bowl, combine the frozen shelled edamame and pepitas. Drizzle with olive oil and toss to coat evenly.
+Add the garlic powder, dried rosemary, sea salt, and black pepper to the bowl. Toss again until the edamame and pepitas are well seasoned. Spread the mixture in a single layer on the prepared baking sheet.
+Roast for 15-20 minutes, stirring halfway through, until the edamame is lightly browned and slightly crispy, and the pepitas are golden. Keep a close eye on them to prevent burning. Remove from the oven and let cool slightly before serving. Divide evenly into two portions.</div>
+      </div>
+    </details>
+  </div>
+</section>
+<section class="day-section" id="wednesday">
+  <h2>Wednesday</h2>
+  <div class="meal-label">breakfast</div>
+  <div class="recipe-card">
+    <h3>High-Protein Black Bean &amp; Corn Grits Bowl with Chipotle Tempeh</h3>
+    <div class="recipe-meta">
+      <span>🥜 38.5g protein/serving</span>
+      <span>🔪 15 min prep</span>
+      <span>🔥 20 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>160 g Corn grits (quick-cooking)</li>
+          <li>2.5 cup Vegetable broth</li>
+          <li>1.5 cup Canned black beans, rinsed and drained</li>
+          <li>1 cup Frozen corn kernels</li>
+          <li>200 g Tempeh</li>
+          <li>1 tsp Chipotle powder</li>
+          <li>0.5 tsp Ground cumin</li>
+          <li>0.5 tsp Smoked paprika</li>
+          <li>2 tbsp Nutritional yeast</li>
+          <li>2 tbsp Olive oil</li>
+          <li>1 tsp Garlic powder</li>
+          <li>0.2 cup Fresh cilantro, chopped</li>
+          <li>1 whole Avocado, diced</li>
+          <li>1 tsp Salt and black pepper</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">First, prepare the grits: In a medium saucepan, bring 2.5 cups of vegetable broth to a boil. Slowly whisk in the corn grits, reduce heat to low, cover, and simmer for 5-7 minutes, stirring occasionally, until thick and creamy. Stir in 1 tbsp of nutritional yeast and season with salt and pepper to taste. Next, prepare the chipotle tempeh: Crumble the tempeh into small pieces using your hands or a fork. Heat 1 tbsp of olive oil in a large non-stick skillet over medium heat. Add the crumbled tempeh, chipotle powder, cumin, smoked paprika, and garlic powder. Cook, stirring frequently, for 8-10 minutes until the tempeh is golden brown and slightly crispy. While the tempeh cooks, prepare the black bean and corn mixture: In a separate small skillet, heat the remaining 1 tbsp of olive oil. Add the rinsed black beans and frozen corn. Cook for 5-7 minutes, stirring occasionally, until heated through. To assemble the bowls, divide the cooked grits between two serving bowls. Top each with half of the chipotle tempeh, followed by half of the black bean and corn mixture. Garnish generously with fresh cilantro and diced avocado before serving.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">lunch</div>
+  <div class="recipe-card">
+    <h3>High-Protein Kung Pao Inspired Seitan &amp; Peanut Brown Rice Bowl with Edamame</h3>
+    <div class="recipe-meta">
+      <span>🥜 55.0g protein/serving</span>
+      <span>🔪 15 min prep</span>
+      <span>🔥 45 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>190 g Brown rice (dry)</li>
+          <li>3.8 cup Water</li>
+          <li>250 g Seitan, sliced into strips</li>
+          <li>1.5 cup Frozen shelled edamame</li>
+          <li>1 whole Red bell pepper, cored and chopped</li>
+          <li>1 whole Green bell pepper, cored and chopped</li>
+          <li>4 tbsp Roasted peanuts, unsalted</li>
+          <li>4 tbsp Low-sodium tamari or soy sauce</li>
+          <li>2 tbsp Rice vinegar</li>
+          <li>1 tbsp Maple syrup</li>
+          <li>1 tsp Sriracha (optional, for heat)</li>
+          <li>1 tbsp Cornstarch</li>
+          <li>1 tsp Garlic powder</li>
+          <li>0.5 tsp Ground ginger</li>
+          <li>1 tsp Sesame oil</li>
+          <li>1 tbsp Vegetable oil</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">Begin by cooking the brown rice: In a medium saucepan, combine the brown rice with 3.75 cups of water. Bring to a boil, then reduce heat to low, cover, and simmer for 40-45 minutes, or until all water is absorbed and rice is tender. While the rice cooks, prepare the Kung Pao sauce: In a small bowl, whisk together tamari, rice vinegar, maple syrup, sriracha (if using), cornstarch, garlic powder, and ground ginger until smooth. Set aside. Next, heat vegetable oil in a large skillet or wok over medium-high heat. Add the seitan strips and bell peppers, stir-frying for 5-7 minutes until the seitan is lightly browned and peppers are tender-crisp. Add the frozen edamame to the skillet and cook for another 2-3 minutes, until heated through. Give the sauce another quick whisk and pour it over the seitan and vegetables in the skillet. Cook, stirring continuously, for 1-2 minutes until the sauce thickens and coats all ingredients. Stir in the sesame oil. To serve, divide the cooked brown rice between two bowls. Top with the Kung Pao seitan and vegetable mixture, and sprinkle generously with roasted peanuts.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">dinner</div>
+  <div class="recipe-card">
+    <h3>High-Protein Creamy White Bean &amp; Roasted Red Pepper Sauce Pasta with Herbed Seitan Crumble</h3>
+    <div class="recipe-meta">
+      <span>🥜 48.0g protein/serving</span>
+      <span>🔪 15 min prep</span>
+      <span>🔥 20 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>200 g Whole wheat pasta</li>
+          <li>2 whole Canned cannellini beans, rinsed and drained</li>
+          <li>340 g Jarred roasted red peppers, drained</li>
+          <li>3 tbsp Nutritional yeast</li>
+          <li>1.5 cup Unsweetened plant milk (e.g., soy or oat)</li>
+          <li>1 tsp Garlic powder</li>
+          <li>1 tsp Dried basil</li>
+          <li>0.5 tsp Dried oregano</li>
+          <li>2 tbsp Olive oil</li>
+          <li>150 g Seitan, crumbled</li>
+          <li>0.2 cup Fresh parsley, chopped</li>
+          <li>1 tsp Salt and black pepper</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">First, bring a large pot of salted water to a boil. Add the whole wheat pasta and cook according to package instructions until al dente. Drain well, reserving about 1/2 cup of pasta water. While the pasta cooks, prepare the seitan crumble: Heat 1 tbsp of olive oil in a large skillet over medium-high heat. Add the crumbled seitan, dried basil, and dried oregano. Cook, stirring occasionally, for 8-10 minutes until the seitan is lightly browned and slightly crispy. Season with a pinch of salt and pepper, then set aside. Next, prepare the creamy sauce: In a high-speed blender, combine the rinsed cannellini beans, drained roasted red peppers, nutritional yeast, plant milk, garlic powder, and the remaining 1 tbsp of olive oil. Blend until completely smooth and creamy. If the sauce is too thick, add a tablespoon or two of the reserved pasta water until it reaches your desired consistency. Taste and adjust seasoning with salt and pepper as needed. Pour the creamy sauce into the skillet with the cooked seitan crumble. Add the drained pasta and toss everything together to coat thoroughly. If needed, add a splash of reserved pasta water to loosen the sauce. Serve immediately, garnished with fresh chopped parsley.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">Snack</div>
+  <div class="recipe-card">
+    <h3>Bryan Johnson Blueprint Protein Hydration</h3>
+    <div class="recipe-meta">
+      <span>🥜 26.0g protein/serving</span>
+      <span>🔪 2 min prep</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>60 g Bryan Johnson Blueprint Protein</li>
+          <li>2 cup Water</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">Measure out 60g (approximately 2 scoops) of Bryan Johnson Blueprint Protein powder. Add the protein powder to a shaker bottle. Pour 2 cups of cold water into the shaker bottle. Secure the lid tightly and shake vigorously for 20-30 seconds, or until the protein powder is completely dissolved and no clumps remain. Divide evenly into two glasses and serve immediately for a quick and easy protein boost.</div>
+      </div>
+    </details>
+  </div>
+</section>
+<section class="day-section" id="thursday">
+  <h2>Thursday</h2>
+  <div class="meal-label">breakfast</div>
+  <div class="recipe-card">
+    <h3>High-Protein Savory Tempeh Hash with Sweet Potatoes and Spinach</h3>
+    <div class="recipe-meta">
+      <span>🥜 35g protein/serving</span>
+      <span>🔪 15 min prep</span>
+      <span>🔥 30 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>300 g Tempeh</li>
+          <li>400 g Sweet Potato</li>
+          <li>240 g Canned Black Beans, drained and rinsed</li>
+          <li>200 g Fresh Spinach</li>
+          <li>3 tbsp Nutritional Yeast</li>
+          <li>1.5 tsp Smoked Paprika</li>
+          <li>1 tsp Cumin Powder</li>
+          <li>1 tsp Garlic Powder</li>
+          <li>0.5 tsp Dried Thyme</li>
+          <li>1.5 tbsp Tamari (or soy sauce)</li>
+          <li>2 tbsp Olive Oil</li>
+          <li>0.5 tsp Salt</li>
+          <li>0.2 tsp Black Pepper</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">First, peel the sweet potatoes and cut them into small, uniform cubes, about 1/2 inch in size. Heat 1 tablespoon of olive oil in a large non-stick skillet over medium-high heat. Add the sweet potato cubes and cook for 15-20 minutes, stirring occasionally, until tender and lightly browned. While the sweet potatoes are cooking, crumble the tempeh into small pieces with your hands or a fork. In a separate bowl, toss the crumbled tempeh with tamari, smoked paprika, cumin powder, garlic powder, dried thyme, salt, and black pepper. Once the sweet potatoes are tender, push them to one side of the skillet. Add the remaining 1 tablespoon of olive oil to the empty side, then add the seasoned tempeh. Cook the tempeh for 8-10 minutes, stirring frequently, until it&#x27;s golden brown and slightly crispy. Finally, add the drained and rinsed black beans and fresh spinach to the skillet. Stir everything together and cook for 2-3 minutes, until the spinach has wilted. Stir in the nutritional yeast just before serving. Divide evenly into two bowls.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">lunch</div>
+  <div class="recipe-card">
+    <h3>High-Protein Chipotle Lime Black Bean &amp; Quinoa Bowl with Roasted Bell Peppers and Baked Tempeh Strips</h3>
+    <div class="recipe-meta">
+      <span>🥜 34g protein/serving</span>
+      <span>🔪 15 min prep</span>
+      <span>🔥 30 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>100 g Quinoa, dry</li>
+          <li>200 ml Water</li>
+          <li>227 g Tempeh</li>
+          <li>2 whole Bell Peppers (red and yellow)</li>
+          <li>240 g Canned Black Beans, drained and rinsed</li>
+          <li>2 tbsp Lime Juice</li>
+          <li>1 tsp Chipotle Powder</li>
+          <li>0.5 tsp Smoked Paprika</li>
+          <li>0.5 tsp Cumin Powder</li>
+          <li>0.5 tsp Garlic Powder</li>
+          <li>2 tbsp Olive Oil</li>
+          <li>0.5 tsp Salt</li>
+          <li>0.2 cup Fresh Cilantro, chopped (for garnish)</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">Preheat your oven to 400°F (200°C). Cook the quinoa: Rinse the quinoa thoroughly, then combine with 200ml water in a small pot. Bring to a boil, then reduce heat to low, cover, and simmer for 15 minutes or until all water is absorbed. Let it sit, covered, for 5 minutes off the heat, then fluff with a fork. While quinoa cooks, slice the bell peppers into strips. Slice the tempeh into thin strips (about 1/4 inch thick). In a medium bowl, combine 1 tablespoon of olive oil, lime juice, chipotle powder, smoked paprika, cumin powder, garlic powder, and half a teaspoon of salt. Toss the tempeh strips and bell pepper slices in this mixture until evenly coated. Spread the seasoned tempeh and bell peppers in a single layer on a baking sheet. Roast for 20-25 minutes, flipping halfway through, until the tempeh is golden and the peppers are tender-crisp. To assemble the bowls, divide the cooked quinoa between two serving bowls. Top each with a generous portion of the roasted tempeh and bell peppers, and a scoop of drained and rinsed black beans. Garnish with fresh chopped cilantro before serving.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">dinner</div>
+  <div class="recipe-card">
+    <h3>High-Protein Green Lentil &amp; Seitan Farro Bowl with Roasted Sweet Potatoes and Herbed Tahini Dressing</h3>
+    <div class="recipe-meta">
+      <span>🥜 40g protein/serving</span>
+      <span>🔪 20 min prep</span>
+      <span>🔥 35 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>80 g Farro, dry</li>
+          <li>80 g Green Lentils, dry</li>
+          <li>150 g Seitan, pre-made</li>
+          <li>300 g Sweet Potato</li>
+          <li>100 g Fresh Spinach</li>
+          <li>4 tbsp Tahini</li>
+          <li>2 tbsp Lemon Juice</li>
+          <li>4 tbsp Water</li>
+          <li>0.5 tsp Dried Oregano</li>
+          <li>0.5 tsp Dried Thyme</li>
+          <li>0.5 tsp Garlic Powder</li>
+          <li>2 tbsp Olive Oil</li>
+          <li>0.8 tsp Salt</li>
+          <li>0.2 tsp Black Pepper</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">Begin by preheating your oven to 400°F (200°C). Peel the sweet potato and cut it into 1-inch cubes. Toss the sweet potato cubes with 1 tablespoon of olive oil, 1/4 teaspoon salt, and 1/8 teaspoon black pepper on a baking sheet. Roast for 25-30 minutes, or until tender and lightly caramelized. While the sweet potatoes roast, cook the farro and lentils. Rinse the farro and cook according to package directions (typically 1 part farro to 3 parts water, simmer for 25-30 minutes). In a separate pot, rinse the green lentils and cook them in plenty of water until tender but not mushy, about 20-25 minutes. Drain both. Cut the seitan into bite-sized pieces or strips. Heat the remaining 1 tablespoon of olive oil in a skillet over medium-high heat. Add the seitan and cook for 5-7 minutes, stirring occasionally, until browned and slightly crispy. In a small bowl, whisk together the tahini, lemon juice, 4 tablespoons of water (add more if needed to reach desired consistency), dried oregano, dried thyme, garlic powder, 1/2 teaspoon salt, and 1/8 teaspoon black pepper to create the herbed tahini dressing. To assemble the bowls, divide the cooked farro and green lentils between two large bowls. Top with the roasted sweet potatoes, pan-seared seitan, and fresh spinach. Drizzle generously with the herbed tahini dressing before serving.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">Snack 1</div>
+  <div class="recipe-card">
+    <h3>Bryan Johnson Blueprint Protein Water Shake (Standard)</h3>
+    <div class="recipe-meta">
+      <span>🥜 26g protein/serving</span>
+      <span>🔪 2 min prep</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 1.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 0.8 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>53.0 g Bryan Johnson Blueprint Protein</li>
+          <li>300 ml Water</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">Measure one scoop of Bryan Johnson Blueprint Protein powder. Add the protein powder to a shaker bottle. Pour 300ml of cold water into the shaker bottle. Secure the lid tightly and shake vigorously for 20-30 seconds, or until the powder is fully dissolved and the shake is smooth. Serve immediately as a refreshing high-protein snack or post-workout fuel.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">Snack 2</div>
+  <div class="recipe-card">
+    <h3>High-Protein Tamari &amp; Chili Roasted Chickpeas &amp; Almonds</h3>
+    <div class="recipe-meta">
+      <span>🥜 21.5g protein/serving</span>
+      <span>🔪 10 min prep</span>
+      <span>🔥 30 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>360 g Canned Chickpeas, drained and rinsed</li>
+          <li>100 g Whole Raw Almonds</li>
+          <li>2 tbsp Tamari (or soy sauce)</li>
+          <li>1 tsp Chili Flakes</li>
+          <li>0.5 tsp Garlic Powder</li>
+          <li>1 tbsp Olive Oil</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">Preheat your oven to 375°F (190°C). Thoroughly drain and rinse the canned chickpeas, then pat them very dry with a clean kitchen towel. It&#x27;s crucial they are dry for crispiness. In a large bowl, combine the dried chickpeas, whole raw almonds, tamari, chili flakes, garlic powder, and olive oil. Toss everything together until the chickpeas and almonds are evenly coated. Spread the mixture in a single layer on a baking sheet lined with parchment paper. Ensure there&#x27;s enough space for even roasting. Roast for 25-30 minutes, stirring halfway through, until the chickpeas are crispy and the almonds are toasted and fragrant. Let cool completely on the baking sheet before serving. They will become crispier as they cool. Store in an airtight container.</div>
+      </div>
+    </details>
+  </div>
+</section>
+<section class="day-section" id="friday">
+  <h2>Friday</h2>
+  <div class="meal-label">breakfast</div>
+  <div class="recipe-card">
+    <h3>High-Protein Savory Chickpea &amp; Hemp Heart Porridge with Sautéed Kale and Sun-Dried Tomatoes</h3>
+    <div class="recipe-meta">
+      <span>🥜 34g protein/serving</span>
+      <span>🔪 10 min prep</span>
+      <span>🔥 15 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>400 g Canned chickpeas, rinsed and drained</li>
+          <li>300 ml Vegetable broth</li>
+          <li>2 tbsp Nutritional yeast</li>
+          <li>0.5 tsp Dried thyme</li>
+          <li>0.5 tsp Garlic powder</li>
+          <li>0.5 tsp Salt</li>
+          <li>0.2 tsp Black pepper</li>
+          <li>100 g Kale, chopped</li>
+          <li>40 g Sun-dried tomatoes, oil-packed, drained and chopped</li>
+          <li>60 g Hemp hearts</li>
+          <li>1 tbsp Olive oil</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">1. Rinse and drain the canned chickpeas thoroughly. In a medium saucepan, combine the rinsed chickpeas, vegetable broth, nutritional yeast, dried thyme, garlic powder, salt, and black pepper. 
+2. Bring the mixture to a gentle boil over medium heat, then reduce heat to low, cover, and simmer for 5-7 minutes, allowing the chickpeas to soften further and absorb the flavors.
+3. Using a fork or potato masher, gently mash about half of the chickpeas in the saucepan to create a creamy, porridge-like consistency while leaving some whole for texture. 
+4. In a separate pan, heat the olive oil over medium heat. Add the chopped kale and sauté for 3-5 minutes until wilted. Stir in the chopped sun-dried tomatoes and cook for another minute.
+5. Divide the chickpea porridge between two bowls. Top each serving with the sautéed kale and sun-dried tomato mixture, then sprinkle generously with hemp hearts. Serve immediately.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">lunch</div>
+  <div class="recipe-card">
+    <h3>High-Protein Gochujang Glazed Seitan &amp; Black Bean Grain Bowl with Steamed Broccoli and Brown Rice</h3>
+    <div class="recipe-meta">
+      <span>🥜 38g protein/serving</span>
+      <span>🔪 15 min prep</span>
+      <span>🔥 20 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>200 g Seitan, pre-made, cut into 1-inch pieces</li>
+          <li>400 g Canned black beans, rinsed and drained</li>
+          <li>2 cup Cooked brown rice</li>
+          <li>300 g Broccoli florets</li>
+          <li>2 tbsp Gochujang (Korean chili paste)</li>
+          <li>2 tbsp Tamari or soy sauce</li>
+          <li>1 tbsp Rice vinegar</li>
+          <li>1 tbsp Maple syrup</li>
+          <li>1 tsp Toasted sesame oil</li>
+          <li>2 whole Garlic, minced</li>
+          <li>1 tbsp Olive oil</li>
+          <li>1 tsp Sesame seeds, for garnish</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">1. Prepare your ingredients: Cut the seitan into 1-inch pieces, rinse and drain black beans, and prepare broccoli florets. If not already cooked, cook brown rice according to package instructions.
+2. In a small bowl, whisk together gochujang, tamari, rice vinegar, maple syrup, toasted sesame oil, and minced garlic to create the glaze.
+3. Heat olive oil in a large non-stick skillet over medium-high heat. Add the seitan pieces and cook for 5-7 minutes, stirring occasionally, until lightly browned and slightly crispy. Add the rinsed black beans to the skillet and cook for another 2-3 minutes.
+4. Pour the prepared gochujang glaze over the seitan and black beans. Stir well to coat and cook for 2-3 minutes, allowing the sauce to thicken slightly and caramelize.
+5. While the seitan mixture is cooking, steam the broccoli florets until tender-crisp, about 5-7 minutes. 
+6. To assemble the bowls, divide the cooked brown rice between two serving bowls. Top with the gochujang-glazed seitan and black bean mixture and the steamed broccoli. Garnish with sesame seeds before serving.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">dinner</div>
+  <div class="recipe-card">
+    <h3>High-Protein Creamy Tuscan White Bean &amp; Sun-Dried Tomato Seitan Skillet with Spinach and Pearl Barley</h3>
+    <div class="recipe-meta">
+      <span>🥜 38g protein/serving</span>
+      <span>🔪 15 min prep</span>
+      <span>🔥 25 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>200 g Seitan, pre-made, cut into bite-sized pieces</li>
+          <li>400 g Canned cannellini beans, rinsed and drained</li>
+          <li>1 cup Cooked pearl barley</li>
+          <li>60 g Sun-dried tomatoes, oil-packed, drained and chopped</li>
+          <li>150 g Fresh spinach</li>
+          <li>200 ml Vegetable broth</li>
+          <li>60 g Dairy-free cream cheese or cashew cream</li>
+          <li>1 tbsp Nutritional yeast</li>
+          <li>1 tsp Dried basil</li>
+          <li>0.5 tsp Dried oregano</li>
+          <li>0.5 tsp Garlic powder</li>
+          <li>0.5 tsp Salt</li>
+          <li>0.2 tsp Black pepper</li>
+          <li>1 tbsp Olive oil</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">1. If not already cooked, prepare pearl barley according to package directions. Rinse and drain cannellini beans and chop sun-dried tomatoes. 
+2. Heat olive oil in a large skillet or deep pan over medium-high heat. Add the seitan pieces and cook for 5-7 minutes, stirring occasionally, until lightly browned.
+3. Add the chopped sun-dried tomatoes, dried basil, dried oregano, garlic powder, salt, and black pepper to the skillet. Stir well and cook for 1-2 minutes until fragrant.
+4. Pour in the vegetable broth and bring to a simmer. Stir in the dairy-free cream cheese (or cashew cream) and nutritional yeast until smooth and fully incorporated, creating a creamy sauce.
+5. Add the rinsed and drained cannellini beans and the cooked pearl barley to the skillet, stirring to combine everything with the creamy sauce. Allow to cook for 2-3 minutes, letting the flavors meld.
+6. Finally, stir in the fresh spinach. Cook for just 1-2 minutes, or until the spinach has wilted. Serve immediately in bowls.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">Snack 1</div>
+  <div class="recipe-card">
+    <h3>Bryan Johnson Blueprint Protein Daily Recharge (Water)</h3>
+    <div class="recipe-meta">
+      <span>🥜 26g protein/serving</span>
+      <span>🔪 2 min prep</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 1.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 0.8 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>53.0 g Bryan Johnson Blueprint Plant-Based Protein Powder</li>
+          <li>250 ml Water</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">1. Measure out 250 ml of cold water into a shaker bottle or glass.
+2. Add one scoop (approx. 30g, refer to product packaging for exact scoop weight) of Bryan Johnson Blueprint Plant-Based Protein Powder to the water.
+3. Secure the lid on the shaker bottle and shake vigorously for 15-30 seconds, or stir well with a spoon in a glass, until the powder is fully dissolved and smooth. Consume immediately.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">Snack 2</div>
+  <div class="recipe-card">
+    <h3>High-Protein Smoky Tamari Baked Tempeh Bites</h3>
+    <div class="recipe-meta">
+      <span>🥜 23g protein/serving</span>
+      <span>🔪 10 min prep</span>
+      <span>🔥 25 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>250 g Tempeh, block</li>
+          <li>3 tbsp Tamari or soy sauce</li>
+          <li>0.5 tsp Liquid smoke</li>
+          <li>1 tsp Smoked paprika</li>
+          <li>0.5 tsp Garlic powder</li>
+          <li>1 tbsp Olive oil</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">1. Preheat your oven to 200°C (400°F). Line a baking sheet with parchment paper.
+2. Unwrap the tempeh block and cut it into small, bite-sized cubes or thin triangles (about 1-inch pieces).
+3. In a medium bowl, whisk together the tamari, liquid smoke, smoked paprika, garlic powder, and olive oil to create the marinade.
+4. Add the tempeh pieces to the bowl with the marinade. Toss gently until all the tempeh pieces are evenly coated.
+5. Spread the marinated tempeh in a single layer on the prepared baking sheet. Ensure there is some space between the pieces for even cooking.
+6. Bake for 20-25 minutes, flipping the tempeh halfway through, until the bites are golden brown, slightly crispy, and chewy. Allow to cool slightly before serving as a high-protein snack.</div>
+      </div>
+    </details>
+  </div>
+</section>
+<section class="day-section" id="saturday">
+  <h2>Saturday</h2>
+  <div class="meal-label">breakfast</div>
+  <div class="recipe-card">
+    <h3>High-Protein Savory Barley Breakfast Bowl with Smoked Tofu and Sautéed Greens</h3>
+    <div class="recipe-meta">
+      <span>🥜 53g protein/serving</span>
+      <span>🔪 15 min prep</span>
+      <span>🔥 30 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>1 cup Pearl Barley</li>
+          <li>3 cup Vegetable Broth</li>
+          <li>350 g Smoked Tofu</li>
+          <li>1 cup Edamame (shelled, frozen)</li>
+          <li>4 cup Kale (chopped)</li>
+          <li>1 tsp Garlic Powder</li>
+          <li>0.5 tsp Smoked Paprika</li>
+          <li>2 tbsp Nutritional Yeast</li>
+          <li>1 tbsp Tamari</li>
+          <li>1 tbsp Olive Oil</li>
+          <li>0.2 tsp Black Pepper</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">1. Rinse the pearl barley under cold water. In a medium saucepan, combine the rinsed barley and vegetable broth. Bring to a boil, then reduce heat to low, cover, and simmer for 25-30 minutes, or until barley is tender and liquid is absorbed. 
+2. While the barley cooks, drain and press the smoked tofu to remove excess water. Cut the tofu into 1/2-inch cubes. 
+3. Heat olive oil in a large skillet over medium-high heat. Add the cubed smoked tofu and cook, stirring occasionally, until golden brown and slightly crispy, about 7-10 minutes. 
+4. Add the frozen edamame, garlic powder, and smoked paprika to the skillet. Sauté for 3-5 minutes until the edamame is heated through. 
+5. Stir in the chopped kale and cook until wilted, about 3-5 minutes. Remove the skillet from heat and stir in the nutritional yeast and tamari. 
+6. Once the barley is cooked, fluff with a fork. Divide the cooked barley between two bowls. Top each bowl generously with the smoked tofu, edamame, and kale mixture. Season with black pepper to taste and serve warm.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">lunch</div>
+  <div class="recipe-card">
+    <h3>High-Protein Black Lentil &amp; Roasted Vegetable Farro Bowl with Lemon-Herb Tahini Dressing</h3>
+    <div class="recipe-meta">
+      <span>🥜 29g protein/serving</span>
+      <span>🔪 15 min prep</span>
+      <span>🔥 35 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>0.8 cup Black Lentils (dry)</li>
+          <li>0.5 cup Farro (dry)</li>
+          <li>3 cup Broccoli Florets</li>
+          <li>1 cup Cherry Tomatoes</li>
+          <li>2 tbsp Olive Oil</li>
+          <li>1 tsp Dried Oregano</li>
+          <li>0.5 tsp Dried Thyme</li>
+          <li>0.5 tsp Salt</li>
+          <li>0.2 tsp Black Pepper</li>
+          <li>4 tbsp Tahini</li>
+          <li>2 tbsp Lemon Juice</li>
+          <li>3 tbsp Water</li>
+          <li>0.5 tsp Garlic Powder</li>
+          <li>1 tsp Dried Parsley</li>
+          <li>0.2 tsp Salt (for dressing)</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">1. Preheat oven to 400°F (200°C). On a large baking sheet, toss broccoli florets and cherry tomatoes with 1 tablespoon of olive oil, dried oregano, dried thyme, 0.5 tsp salt, and 0.25 tsp black pepper. Roast for 20-25 minutes, or until vegetables are tender and slightly charred. 
+2. While vegetables roast, cook the black lentils and farro. Rinse black lentils under cold water. In a small saucepan, combine lentils with 2 cups of water. Bring to a boil, then reduce heat, cover, and simmer for 20-25 minutes, or until tender. Drain any excess water. 
+3. In a separate saucepan, rinse farro. Combine farro with 2 cups of water. Bring to a boil, then reduce heat, cover, and simmer for 20-25 minutes, or until tender. Drain any excess water. 
+4. Prepare the lemon-herb tahini dressing: In a small bowl, whisk together tahini, lemon juice, 3 tablespoons water, garlic powder, dried parsley, and 0.25 tsp salt until smooth and creamy. Add more water if needed to reach desired consistency. 
+5. To assemble the bowls, divide the cooked farro and black lentils between two serving bowls. Top with the roasted broccoli and cherry tomatoes. Drizzle generously with the lemon-herb tahini dressing and serve warm.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">dinner</div>
+  <div class="recipe-card">
+    <h3>High-Protein Seitan &amp; White Bean Stir-fry with Brown Rice and Bok Choy</h3>
+    <div class="recipe-meta">
+      <span>🥜 57g protein/serving</span>
+      <span>🔪 20 min prep</span>
+      <span>🔥 25 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>0.8 cup Brown Rice (dry)</li>
+          <li>250 g Seitan</li>
+          <li>1.5 cup Canned White Beans (e.g., cannellini), rinsed and drained</li>
+          <li>4 whole Bok Choy</li>
+          <li>2 whole Carrots</li>
+          <li>1 whole Bell Pepper (any color)</li>
+          <li>3 tbsp Tamari</li>
+          <li>2 tbsp Rice Vinegar</li>
+          <li>1 tbsp Maple Syrup</li>
+          <li>1 tbsp Grated Ginger</li>
+          <li>1 tbsp Sesame Oil</li>
+          <li>1 tbsp Cornstarch</li>
+          <li>2 tbsp Water (for slurry)</li>
+          <li>1 tbsp Vegetable Oil (for stir-frying)</li>
+          <li>1 tbsp Sesame Seeds (for garnish)</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">1. Cook the brown rice according to package directions. Typically, combine 0.75 cup brown rice with 1.5 cups water in a saucepan, bring to a boil, reduce heat, cover, and simmer for 40-45 minutes until water is absorbed. 
+2. While rice cooks, prepare the stir-fry sauce: In a small bowl, whisk together tamari, rice vinegar, maple syrup, grated ginger, and sesame oil. In a separate tiny bowl, whisk cornstarch with 2 tablespoons of water to create a slurry. 
+3. Slice the seitan into thin strips or bite-sized pieces. Chop bok choy, carrots, and bell pepper into uniform pieces. 
+4. Heat vegetable oil in a large skillet or wok over medium-high heat. Add the seitan strips and cook until lightly browned, about 5 minutes. Add the carrots and bell pepper, stirring frequently for 5-7 minutes until slightly tender-crisp. 
+5. Add the bok choy and rinsed white beans to the skillet. Cook for another 3-4 minutes, until bok choy is bright green and slightly wilted. Pour the stir-fry sauce over the vegetables and seitan, then stir in the cornstarch slurry. Cook, stirring constantly, for 1-2 minutes until the sauce thickens. 
+6. Divide the cooked brown rice between two bowls. Top with the seitan and vegetable stir-fry. Garnish with sesame seeds and serve immediately.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">Snack 1</div>
+  <div class="recipe-card">
+    <h3>Bryan Johnson Blueprint Protein Daily Replenishment (Water)</h3>
+    <div class="recipe-meta">
+      <span>🥜 26g protein/serving</span>
+      <span>🔪 2 min prep</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>106.0 g Bryan Johnson Blueprint Protein</li>
+          <li>480 ml Water</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">1. Measure out 240ml of cold water into a shaker bottle or glass for each serving. 
+2. Add one scoop (26g protein) of Bryan Johnson Blueprint Protein to each serving of water. 
+3. Shake well or stir vigorously until the protein powder is fully dissolved and smooth. Consume immediately as a protein-rich snack.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">Snack 2</div>
+  <div class="recipe-card">
+    <h3>Bryan Johnson Blueprint Protein Post-Meal Boost (Water)</h3>
+    <div class="recipe-meta">
+      <span>🥜 26g protein/serving</span>
+      <span>🔪 2 min prep</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>106.0 g Bryan Johnson Blueprint Protein</li>
+          <li>480 ml Water</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">1. Measure out 240ml of cold water into a shaker bottle or glass for each serving. 
+2. Add one scoop (26g protein) of Bryan Johnson Blueprint Protein to each serving of water. 
+3. Shake well or stir vigorously until the protein powder is fully dissolved and smooth. Consume immediately to boost daily protein intake.</div>
+      </div>
+    </details>
+  </div>
+</section>
+<section class="day-section" id="sunday">
+  <h2>Sunday</h2>
+  <div class="meal-label">breakfast</div>
+  <div class="recipe-card">
+    <h3>High-Protein Savory Buckwheat &amp; Seitan Scramble Bowl with Chickpeas and Arugula</h3>
+    <div class="recipe-meta">
+      <span>🥜 53g protein/serving</span>
+      <span>🔪 10 min prep</span>
+      <span>🔥 25 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>100 g Buckwheat groats (dry)</li>
+          <li>480 ml Water</li>
+          <li>200 g Seitan</li>
+          <li>400 g Canned chickpeas, drained and rinsed</li>
+          <li>4 tbsp Nutritional yeast</li>
+          <li>2 tsp Garlic powder</li>
+          <li>1 tsp Turmeric powder</li>
+          <li>1 tsp Black salt (Kala Namak)</li>
+          <li>1 tsp Smoked paprika</li>
+          <li>2 tbsp Olive oil</li>
+          <li>200 g Baby spinach</li>
+          <li>200 g Cherry tomatoes, halved</li>
+          <li>100 g Fresh arugula</li>
+          <li>1 tsp Salt</li>
+          <li>0.5 tsp Black pepper</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">Rinse the buckwheat groats thoroughly under cold water. In a medium saucepan, combine the rinsed buckwheat groats with 480ml of water. Bring to a boil, then reduce heat to low, cover, and simmer for 15 minutes, or until water is absorbed and buckwheat is tender. While the buckwheat cooks, prepare the scramble. Crumble the seitan into small pieces. Drain and rinse the chickpeas. In a large non-stick skillet, heat the olive oil over medium heat. Add the crumbled seitan and cook for 5-7 minutes, stirring occasionally, until lightly browned. Add the drained chickpeas, nutritional yeast, garlic powder, turmeric powder, black salt, and smoked paprika to the skillet. Stir well to combine and cook for another 5 minutes, allowing the flavors to meld. Stir in the baby spinach and cherry tomatoes, cooking until the spinach is wilted, about 2-3 minutes. Season with salt and black pepper to taste. To serve, divide the cooked buckwheat between two bowls. Top each bowl generously with the seitan and chickpea scramble. Garnish with fresh arugula before serving warm.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">lunch</div>
+  <div class="recipe-card">
+    <h3>High-Protein Sticky Peanut Tempeh &amp; Green Bean Stir-fry Bowl with Quinoa</h3>
+    <div class="recipe-meta">
+      <span>🥜 58g protein/serving</span>
+      <span>🔪 15 min prep</span>
+      <span>🔥 25 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>1 cup Quinoa (dry)</li>
+          <li>2 cup Water</li>
+          <li>400 g Tempeh block</li>
+          <li>300 g Green beans, trimmed</li>
+          <li>2 whole Bell peppers (any color), deseeded and sliced</li>
+          <li>4 whole Garlic, minced</li>
+          <li>4 tbsp Natural peanut butter</li>
+          <li>4 tbsp Soy sauce (or tamari)</li>
+          <li>2 tbsp Maple syrup</li>
+          <li>2 tbsp Rice vinegar</li>
+          <li>2 tsp Sriracha (optional)</li>
+          <li>2 tsp Toasted sesame oil</li>
+          <li>2 tbsp Lime juice</li>
+          <li>2 tsp Cornstarch</li>
+          <li>2 tbsp Water for cornstarch slurry</li>
+          <li>2 tbsp Olive oil (for cooking)</li>
+          <li>2 tsp Sesame seeds (for garnish)</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">First, cook the quinoa. Rinse 1 cup of quinoa thoroughly. In a medium saucepan, combine the rinsed quinoa with 2 cups of water. Bring to a boil, then reduce heat to low, cover, and simmer for 15 minutes, or until all water is absorbed. Fluff with a fork and set aside. While quinoa cooks, prepare the tempeh and sauce. Cut the tempeh block into 1-inch cubes. In a small bowl, whisk together the peanut butter, soy sauce, maple syrup, rice vinegar, sriracha (if using), toasted sesame oil, and lime juice. In a separate small bowl, combine the cornstarch with 2 tablespoons of water to create a slurry. Heat 1 tablespoon of olive oil in a large skillet or wok over medium-high heat. Add the tempeh cubes and cook for 8-10 minutes, stirring occasionally, until golden brown on all sides. Remove tempeh from the skillet and set aside. Add the remaining 1 tablespoon of olive oil to the skillet. Add the green beans and sliced bell peppers and minced garlic. Stir-fry for 5-7 minutes until the vegetables are tender-crisp. Return the cooked tempeh to the skillet with the vegetables. Pour the prepared peanut sauce over the tempeh and vegetables. Bring to a gentle simmer, then stir in the cornstarch slurry. Cook for 1-2 minutes, stirring constantly, until the sauce thickens and coats the tempeh and vegetables, becoming &#x27;sticky&#x27;. Divide the cooked quinoa between two bowls. Top generously with the sticky peanut tempeh and vegetable stir-fry. Garnish with sesame seeds before serving.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">dinner</div>
+  <div class="recipe-card">
+    <h3>High-Protein White Bean &amp; Artichoke Heart Skillet with Seitan and Roasted Cherry Tomatoes</h3>
+    <div class="recipe-meta">
+      <span>🥜 53g protein/serving</span>
+      <span>🔪 15 min prep</span>
+      <span>🔥 25 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>250 g Seitan, thinly sliced or cubed</li>
+          <li>2 whole Canned cannellini beans (white kidney beans), drained and rinsed</li>
+          <li>400 g Artichoke hearts (canned or jarred), drained and roughly chopped</li>
+          <li>400 g Cherry tomatoes, halved</li>
+          <li>4 whole Garlic, minced</li>
+          <li>200 g Fresh spinach</li>
+          <li>240 ml Vegetable broth</li>
+          <li>4 tbsp Nutritional yeast</li>
+          <li>2 tsp Dried oregano</li>
+          <li>2 tsp Dried basil</li>
+          <li>1 tsp Red pepper flakes (optional)</li>
+          <li>3 tbsp Olive oil</li>
+          <li>1 tsp Salt</li>
+          <li>0.5 tsp Black pepper</li>
+          <li>2 tbsp Fresh parsley, chopped (for garnish)</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">Heat 2 tablespoons of olive oil in a large, deep skillet or Dutch oven over medium-high heat. Add the thinly sliced or cubed seitan and cook for 7-10 minutes, stirring occasionally, until well-browned and slightly crispy. Remove the seitan from the skillet and set aside. Add the remaining 1 tablespoon of olive oil to the skillet. Add the minced garlic and sauté for 1 minute until fragrant, being careful not to burn it. Add the halved cherry tomatoes to the skillet and cook for 5-7 minutes, stirring occasionally, until they begin to soften and burst. Stir in the drained and rinsed cannellini beans and the chopped artichoke hearts. Pour in the vegetable broth, then add the nutritional yeast, dried oregano, dried basil, and red pepper flakes (if using). Bring the mixture to a simmer and cook for 5 minutes, allowing the flavors to meld and the sauce to slightly reduce. Return the cooked seitan to the skillet. Stir in the fresh spinach, cooking for 2-3 minutes until it wilts completely. Season the skillet with salt and black pepper to taste. Divide the skillet contents between two plates or bowls. Garnish generously with fresh chopped parsley before serving hot.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">Snack 1</div>
+  <div class="recipe-card">
+    <h3>Bryan Johnson Blueprint Protein Daily Revive</h3>
+    <div class="recipe-meta">
+      <span>🥜 26g protein/serving</span>
+      <span>🔪 2 min prep</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>2 whole Bryan Johnson Blueprint Protein</li>
+          <li>600 ml Water</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">Measure out the Bryan Johnson Blueprint Protein powder. For each serving, combine 1 serving of the protein powder with 300ml of cold water in a shaker bottle or blender. Secure the lid tightly and shake vigorously or blend until the powder is fully dissolved and the shake is smooth. Serve immediately and enjoy as a quick and convenient protein boost.</div>
+      </div>
+    </details>
+  </div>
+  <div class="meal-label">Snack 2</div>
+  <div class="recipe-card">
+    <h3>High-Protein Tamari &amp; Smoked Paprika Roasted Pecans &amp; Sunflower Seeds</h3>
+    <div class="recipe-meta">
+      <span>🥜 22.5g protein/serving</span>
+      <span>🔪 5 min prep</span>
+      <span>🔥 15 min cook</span>
+    </div>
+    <div class="servings-list">
+      <span class="person"><strong>David</strong>: 2.0 servings</span>
+      <span class="person"><strong>Baska</strong>: 1.6 servings</span>
+    </div>
+    <details>
+      <summary>Ingredients</summary>
+      <div class="content">
+        <ul>
+          <li>150 g Pecan halves</li>
+          <li>150 g Raw sunflower seeds</li>
+          <li>2 tbsp Tamari (or soy sauce)</li>
+          <li>2 tsp Smoked paprika</li>
+          <li>1 tsp Garlic powder</li>
+          <li>0.5 tsp Black pepper</li>
+          <li>1 tsp Maple syrup (optional, for glaze)</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Instructions</summary>
+      <div class="content">
+        <div class="instructions">Preheat your oven to 160°C (325°F). Line a large baking sheet with parchment paper. In a large bowl, combine the pecan halves and raw sunflower seeds. Add the tamari, smoked paprika, garlic powder, black pepper, and maple syrup (if using). Toss thoroughly until all the nuts and seeds are evenly coated with the seasoning. Spread the seasoned nuts and seeds in a single layer on the prepared baking sheet. Roast in the preheated oven for 12-15 minutes, stirring halfway through, until they are fragrant, lightly toasted, and crisp. Be careful not to burn them. Remove from the oven and let them cool completely on the baking sheet before serving or storing. They will become crispier as they cool. Store any leftovers in an airtight container at room temperature.</div>
+      </div>
+    </details>
+  </div>
+</section>
+<section class="grocery-section">
+  <h2>🛒 Grocery List (2 people)</h2>
+  <div class="grocery-category">
+    <h3>Condiments</h3>
+    <ul>
+      <li>chili powder: 4.5 ml</li>
+      <li>maple syrup: 133.5 ml</li>
+      <li>nutritional yeast: 720.9 ml</li>
+      <li>olive oil: 961.2 ml</li>
+      <li>salt: 62.3 ml</li>
+      <li>sesame oil: 35.6 ml</li>
+      <li>tamari: 106.8 ml</li>
+      <li>vegetable oil: 26.7 ml</li>
+    </ul>
+  </div>
+  <div class="grocery-category">
+    <h3>Legumes</h3>
+    <ul>
+      <li>seitan: 801.0 g</li>
+      <li>tempeh: 1294.1 g</li>
+    </ul>
+  </div>
+  <div class="grocery-category">
+    <h3>Nuts And Seeds</h3>
+    <ul>
+      <li>almond butter: 53.4 ml</li>
+      <li>chia seeds: 26.7 ml</li>
+      <li>tahini: 320.4 ml</li>
+    </ul>
+  </div>
+  <div class="grocery-category">
+    <h3>Other</h3>
+    <ul>
+      <li>artichoke hearts (canned or jarred), drained and roughly chopped: 712.0 g</li>
+      <li>avocado, diced: 1.8 whole</li>
+      <li>baby spinach: 356.0 g</li>
+      <li>bay leaf: 1.8 whole</li>
+      <li>bell pepper (any color): 1.8 whole</li>
+      <li>bell peppers (any color), deseeded and sliced: 3.6 whole</li>
+      <li>bell peppers (red and yellow): 3.6 whole</li>
+      <li>black beans, canned, rinsed and drained: 631.7 ml</li>
+      <li>black lentils (dry): 315.8 ml</li>
+      <li>black pepper: 33.4 ml</li>
+      <li>black pepper, ground: 5.6 ml</li>
+      <li>black pepper, ground, to taste: 2.2 ml</li>
+      <li>black salt (kala namak): 8.9 ml</li>
+      <li>black salt (kala namak, optional for eggy flavor): 2.2 ml</li>
+      <li>blanched almonds: 210.6 ml</li>
+      <li>bok choy: 7.1 whole</li>
+      <li>broccoli florets: 534.0 g</li>
+      <li>broccoli florets: 1263.4 ml</li>
+      <li>brown rice (dry): 338.2 g</li>
+      <li>brown rice (dry): 315.8 ml</li>
+      <li>bryan johnson blueprint plant-based protein powder: 94.3 g</li>
+      <li>bryan johnson blueprint protein: 578.5 g</li>
+      <li>bryan johnson blueprint protein: 7.1 whole</li>
+      <li>bryan johnson blueprint protein powder: 92.6 g</li>
+      <li>buckwheat groats (dry): 178.0 g</li>
+      <li>bulgur, medium grain: 210.6 ml</li>
+      <li>canned black beans, drained and rinsed: 854.4 g</li>
+      <li>canned black beans, rinsed and drained: 712.0 g</li>
+      <li>canned black beans, rinsed and drained: 631.7 ml</li>
+      <li>canned cannellini beans (white kidney beans), drained and rinsed: 3.6 whole</li>
+      <li>canned cannellini beans, rinsed and drained: 712.0 g</li>
+      <li>canned cannellini beans, rinsed and drained: 3.6 whole</li>
+      <li>canned chickpeas, drained and rinsed: 1352.8 g</li>
+      <li>canned chickpeas, rinsed and drained: 712.0 g</li>
+      <li>canned chickpeas, rinsed and drained: 3.6 whole</li>
+      <li>canned white beans (e.g., cannellini), rinsed and drained: 631.7 ml</li>
+      <li>carrots, chopped: 421.1 ml</li>
+      <li>carrots, sliced: 3.6 whole</li>
+      <li>cauliflower florets: 712.0 g</li>
+      <li>celery, chopped: 210.6 ml</li>
+      <li>cherry tomatoes: 356.0 g</li>
+      <li>cherry tomatoes: 421.1 ml</li>
+      <li>cherry tomatoes, halved: 1068.0 g</li>
+      <li>cherry tomatoes, halved: 421.1 ml</li>
+      <li>chickpea flour: 210.6 ml</li>
+      <li>chickpeas, canned, rinsed and drained: 1.8 whole</li>
+      <li>chili flakes: 8.9 ml</li>
+      <li>chipotle powder: 17.8 ml</li>
+      <li>cooked brown rice: 842.3 ml</li>
+      <li>cooked pearl barley: 421.1 ml</li>
+      <li>cooked quinoa: 842.3 ml</li>
+      <li>corn grits (quick-cooking): 284.8 g</li>
+      <li>cornstarch: 71.2 ml</li>
+      <li>cucumber, diced: 210.6 ml</li>
+      <li>cumin powder: 22.2 ml</li>
+      <li>dairy-free cream cheese or cashew cream: 106.8 g</li>
+      <li>diced tomatoes, canned: 3.6 whole</li>
+      <li>dried basil: 35.6 ml</li>
+      <li>dried oregano: 49.0 ml</li>
+      <li>dried parsley: 8.9 ml</li>
+      <li>dried rosemary: 4.5 ml</li>
+      <li>dried thyme: 26.7 ml</li>
+      <li>edamame (shelled, frozen): 421.1 ml</li>
+      <li>erythritol or preferred sweetener (optional): 8.9 ml</li>
+      <li>extra-firm tofu, pressed and crumbled: 623.0 g</li>
+      <li>farro (dry): 210.6 ml</li>
+      <li>farro, dry: 142.4 g</li>
+      <li>fresh arugula: 178.0 g</li>
+      <li>fresh cilantro, chopped: 105.3 ml</li>
+      <li>fresh cilantro, chopped (for garnish): 210.6 ml</li>
+      <li>fresh parsley, chopped: 315.8 ml</li>
+      <li>fresh parsley, chopped (for garnish): 53.4 ml</li>
+      <li>fresh parsley, chopped, for garnish: 53.4 ml</li>
+      <li>fresh spinach: 1335.0 g</li>
+      <li>frozen corn kernels: 421.1 ml</li>
+      <li>frozen shelled edamame: 631.7 ml</li>
+      <li>garlic powder: 122.4 ml</li>
+      <li>garlic, minced: 17.8 whole</li>
+      <li>gochujang (korean chili paste): 53.4 ml</li>
+      <li>grated ginger: 26.7 ml</li>
+      <li>green beans, trimmed: 534.0 g</li>
+      <li>green bell pepper, cored and chopped: 1.8 whole</li>
+      <li>green lentils, dry: 142.4 g</li>
+      <li>green lentils, dry: 210.6 ml</li>
+      <li>ground coriander: 8.9 ml</li>
+      <li>ground cumin: 4.5 ml</li>
+      <li>ground ginger: 4.5 ml</li>
+      <li>ground turmeric: 4.5 ml</li>
+      <li>hemp hearts: 106.8 g</li>
+      <li>instant coffee or espresso powder: 4.5 ml</li>
+      <li>jarred roasted red peppers, drained: 605.2 g</li>
+      <li>kalamata olives, pitted and halved: 105.3 ml</li>
+      <li>kale (chopped): 1684.5 ml</li>
+      <li>kale, chopped: 178.0 g</li>
+      <li>kale, chopped: 1684.5 ml</li>
+      <li>lemon juice: 160.2 ml</li>
+      <li>lemon juice, fresh: 53.4 ml</li>
+      <li>lime juice: 106.8 ml</li>
+      <li>liquid smoke: 4.5 ml</li>
+      <li>low-sodium tamari or soy sauce: 106.8 ml</li>
+      <li>maple syrup (optional, for glaze): 8.9 ml</li>
+      <li>millet, dry: 737.0 ml</li>
+      <li>natural peanut butter: 106.8 ml</li>
+      <li>olive oil (for cooking): 53.4 ml</li>
+      <li>pearl barley: 421.1 ml</li>
+      <li>pearled barley, dry: 105.3 ml</li>
+      <li>pecan halves: 267.0 g</li>
+      <li>pepitas (pumpkin seeds): 315.8 ml</li>
+      <li>quinoa (dry): 421.1 ml</li>
+      <li>quinoa, dry: 178.0 g</li>
+      <li>ras el hanout spice blend: 17.8 ml</li>
+      <li>raw sunflower seeds: 267.0 g</li>
+      <li>red bell pepper, cored and chopped: 1.8 whole</li>
+      <li>red pepper flakes (optional): 8.9 ml</li>
+      <li>rice vinegar: 186.9 ml</li>
+      <li>roasted peanuts, unsalted: 106.8 ml</li>
+      <li>roasted red peppers, jarred, drained and sliced: 210.6 ml</li>
+      <li>salt (for dressing): 2.2 ml</li>
+      <li>salt and black pepper: 17.8 ml</li>
+      <li>salt, to taste: 11.1 ml</li>
+      <li>sea salt: 2.2 ml</li>
+      <li>seitan, crumbled: 267.0 g</li>
+      <li>seitan, pre-made: 267.0 g</li>
+      <li>seitan, pre-made, cubed: 302.6 g</li>
+      <li>seitan, pre-made, cut into 1-inch pieces: 356.0 g</li>
+      <li>seitan, pre-made, cut into bite-sized pieces: 356.0 g</li>
+      <li>seitan, pre-made, sliced: 398.7 g</li>
+      <li>seitan, sliced into strips: 801.0 g</li>
+      <li>seitan, thinly sliced or cubed: 445.0 g</li>
+      <li>sesame seeds (for garnish): 44.5 ml</li>
+      <li>sesame seeds, for garnish: 8.9 ml</li>
+      <li>shelled edamame, frozen: 631.7 ml</li>
+      <li>smoked paprika: 75.7 ml</li>
+      <li>smoked tofu: 623.0 g</li>
+      <li>soy sauce (or tamari): 106.8 ml</li>
+      <li>sriracha (optional): 17.8 ml</li>
+      <li>sriracha (optional, for heat): 8.9 ml</li>
+      <li>sun-dried tomatoes, oil-packed, drained and chopped: 178.0 g</li>
+      <li>tamari (or soy sauce): 200.2 ml</li>
+      <li>tamari or soy sauce: 133.5 ml</li>
+      <li>tempeh block: 712.0 g</li>
+      <li>tempeh, block: 849.1 g</li>
+      <li>toasted sesame oil: 26.7 ml</li>
+      <li>tomato paste: 106.8 ml</li>
+      <li>turmeric powder: 22.2 ml</li>
+      <li>unsweetened almond milk: 631.7 ml</li>
+      <li>unsweetened cocoa powder: 26.7 ml</li>
+      <li>unsweetened plant milk (e.g., soy or oat): 631.7 ml</li>
+      <li>vegetable broth: 7002.4 ml</li>
+      <li>vegetable oil (for stir-frying): 26.7 ml</li>
+      <li>water: 9802.2 ml</li>
+      <li>water (for millet): 842.3 ml</li>
+      <li>water (for slurry): 53.4 ml</li>
+      <li>water (or unsweetened plant milk for extra creaminess): 631.7 ml</li>
+      <li>water for cornstarch slurry: 53.4 ml</li>
+      <li>whole raw almonds: 178.0 g</li>
+      <li>whole wheat pasta: 356.0 g</li>
+      <li>zucchini, diced: 1.8 whole</li>
+    </ul>
+  </div>
+  <div class="grocery-category">
+    <h3>Produce</h3>
+    <ul>
+      <li>carrots: 3.6 whole</li>
+      <li>sweet potato: 1246.0 g</li>
+    </ul>
+  </div>
+</section>
+<div class="archive-link">
+  <a href="../../index.html">← Current Week</a> · 
+  <a href="../../archive.html">Archive</a>
+</div>
+</main>
+<footer>Generated by Vegan Meal Planner</footer>
+</body>
+</html>
